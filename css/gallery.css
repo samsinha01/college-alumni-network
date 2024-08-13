@@ -1,0 +1,87 @@
+/*---------------aboutation--------------*/
+.aboutation{
+    background:url('../img/aboutation.jpg') no-repeat center;
+    background-size:cover;
+    height:230px;
+    width:100%;
+    z-index:-3;
+}
+.aboutation::before{
+    content:' ';
+    position:absolute;
+    left:0px;
+    right:0px;
+    height:230px;
+    background:black;
+    opacity:0.5;
+}
+.inner-aboutation{
+    position:relative;
+    color:#fff;
+    padding:10px;
+}
+.inner-aboutation strong{
+    font-size:65px;
+    font-family: serif;
+}
+.inner-aboutation>p{
+    margin-top:35px;
+    background-color:#312b2b94;
+    color:#fff;
+    padding:5px 10px;
+    border-radius:6px;
+}
+/*************************aricle-section*****************/
+.sec-1>div>h2{
+	display:inline-block;
+}
+.sec-1>div>span{
+	color:#a09797;
+}
+.inner-sec-1{
+	font-size:19px;
+	background-color:#fff;
+	border-radius:5px;
+	box-shadow:0px 0px 10px 3px #d0d0d0;
+}
+.gallery-nav a{
+	display:inline-block;
+	color:#a09797;
+    padding: 6px 15px;
+}
+.description{
+	padding:20px;
+}
+#active{
+	color:black;
+	font-weight:bold;
+	border-bottom:2px solid black;
+}
+.gallery-nav>a:hover{
+	background-color:#d0d0d0;
+}
+.gallery-nav{
+    flex-wrap: wrap;
+}
+
+/*-------------------------reunion-gal-css---------------------------*/
+#reunion_gal{
+    flex-wrap: wrap;
+    justify-content:center;
+}
+#reunion_gal>a,#independence_gal>a{
+    max-width:350px;
+    display:block;
+    margin:5px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    overflow: hidden;
+}
+#reunion_gal>a>img,#independence_gal>a>img{
+    aspect-ratio: 3/2;
+    padding:8px;
+    transition:0.2s all linear;
+}
+#reunion_gal>a:hover img,#independence_gal>a:hover img{
+    transform:scale(1.2);
+}

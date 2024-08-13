@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: #e5e5e5;
+    overflow-x: hidden;
+}
+main{
+    background: url('../img/bg-img/BG_Pattern.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/************************header-section-css------------------------*/
+.inner-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.inner-header>div>a{
+    display:inline-block;
+    padding:5px 10px;
+    color:#fff;
+}
+.inner-header>div:nth-child(1)>a:hover{
+    color:yellow;
+}
+.inner-header>div:nth-child(2)>a{
+    margin:5px 10px;
+    background-color: #0303b1;
+    border-radius:5px;
+    font-size:20px;
+    font-weight:bold;
+    border:1px inset #ddd;
+    transition: .4s ease;
+}
+.inner-header>div:nth-child(2)>a:hover{
+    background-color: #fff;
+    color:black;
+}
+@media(max-width:520px){
+    header{
+        display:none;
+    }
+}
+
+/*********************toggle-menu-icon***************/
+nav{
+    position:relative;
+}
+.toggle-menu{
+    display: inline-block;
+    cursor: pointer;
+    position:absolute;
+    right:30px;
+    top:5px;
+    z-index:999;
+    color:#fff;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+/******************nav-css********************/
+.inner-nav{
+    padding:0px 75px;
+}
+.logo{
+    width:18%;
+}
+.logo>img{
+    filter: drop-shadow(2px 1px 1px black);
+}
+.nav-links a{
+    color:#fff;
+    display:block;
+    padding:7px 14px;
+    font-size:20px;
+}
+/*******************drop-down-css******************/
+.nav-dropdown{
+    position:absolute;
+    left: -109px;
+    right: 0px;
+    top: 59px;
+    background-color: #0d44bd;
+    z-index:20;
+}
+.nav-dropdown>li:hover{
+    background-color: #113993;
+}
+.nav-dropHide{
+    display:none;
+}
+@media(min-width:1250px){
+    .toggle-menu{
+        display:none;
+    }
+    .inner-nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .nav-links{
+        display:flex;
+        margin:0;
+    }
+    .nav-links>li{
+        margin:0px 7px;
+    }
+    .line-effect::after{
+        content:"";
+        display:block;
+        width:0%;
+        height:4px;
+        background-color: rgb(5, 48, 85);
+        position: relative;
+        top: 11px;
+        transition: all .5s ease;
+    }
+    .line-effect:hover::after{
+        width:100%
+    } 
+}
+@media(max-width:1250px){
+    .inner-nav{
+        position:relative;
+    }
+    .nav-links{
+        background-color: #0d44bd;
+        padding:0;
+        position: absolute;
+        /* left: 0px; */
+        right: 0px;
+        text-align: center;
+        z-index:10;
+    }
+    .nav-toggle-show{
+        display:none;
+    }
+    .nav-links li{
+        border-bottom:1px solid #ddd;
+    }
+    .nav-links>li:hover{
+        background-color: #19199f;
+    }
+    /*------------------------drop-down-css*****************/
+    .nav-dropdown{
+        left: -256px;
+        right: 133px;
+        top: 0px;
+    }
+}
+@media(max-width:900px){
+    .logo{
+        width:37%;
+    }
+}
+@media(max-width:520px){
+    .logo{
+        width:85%;
+    }
+    .inner-nav{
+        padding:0px 40px;
+    }
+}
+
+/************************footer-css*************************/
+.inner-footer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.inner-footer>div{
+    width:350px;
+    height:auto;
+}
+.f-sm-link{
+    display:flex;
+    justify-content:center;
+}
+
+.f-sm-link>li>a{
+    display:block;
+    font-size:25px;
+}
+
+.f-sm-link>li{
+    filter: drop-shadow(2px 4px 6px black);
+    margin:0px 10px;
+}
+.f-links>h3::after{
+    content:'';
+    display:block;
+    width:30px;
+    height:4px;
+    margin-top:5px;
+    background-color: rgb(28, 8, 106);
+}
+.f-links a:hover{
+    color:yellow !important;
+}
+.f-sm-link>li>a>i{
+    transition:0.5s all ease;
+}
+#facebook:hover{
+    color: #23239e !important;
+    transform:scale(1.2);
+    filter:none;
+}
+#instagram:hover{
+    color: #f01939 !important;
+    transform:scale(1.2);
+    filter:none;
+}
+#gPlus:hover{
+    color:#df3526 !important;
+    transform:scale(1.2);
+    filter:none;
+}

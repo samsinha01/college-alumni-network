@@ -1,0 +1,70 @@
+/********************custom-bootstrap***************************/
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+}
+a:focus{
+    text-decoration:none;
+}
+.list-style-none{
+    list-style-type: none;
+}
+.box-shadow{
+    box-shadow: 0px 0px 8px #ddd;
+}
+.drop-shadow{
+    filter: drop-shadow(-3px 0px 6px #888);
+}
+.bg-header{
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%) !important;
+}
+.bg-primary{
+    background-color: #040345;
+}
+.bg-secondary{
+    background: linear-gradient(90deg, rgba(87, 81, 178, 1) 0%, rgba(74, 97, 197, 1) 28%, rgba(4, 118, 244, 1) 44%, rgba(1, 90, 220, 1) 58%) !important;
+}
+.bg-btn{
+    background-color: #0303b1;
+}
+.bg-footer{
+    background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
+}
+.dis-flex{
+    display:flex;
+}
+.flex-1{
+    flex:1;
+}
+.dis-none{
+    display:none;
+}
+.text-black{
+    color:black;
+}
+.text-white{
+    color:#fff;
+}
+.text-gray{
+    color:gray;
+}
+.item-center{
+    align-items:center;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-start{
+    justify-content: start;
+}
+.border-bottom{
+    border-bottom:1px solid #ddd;
+}
+.border-left{
+    border-left:1px solid #ddd;
+}
+.border-right{
+    border-right:1px solid #ddd;
+}
